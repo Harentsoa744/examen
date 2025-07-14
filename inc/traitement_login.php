@@ -1,9 +1,5 @@
 <?php
-$host = "localhost";
-$db = "4288_4390";
-$user = "root";
-$pass = "";
-$conn = mysqli_connect($host, $user, $pass, $db);
+include "connexion.php";
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $mdp = $_POST['mdp'];

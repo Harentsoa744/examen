@@ -15,7 +15,7 @@ session_start();
         <form action="inc/traitement_login.php" method="POST">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="mdp" placeholder="Mot de passe" required>
-            <button type="submit" name="login">Se connecter</button>
+            <button type="submit" name="login" class="btn-primary rounded-pill">Se connecter</button>
         </form>
 
         <div class="link">

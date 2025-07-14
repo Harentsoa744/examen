@@ -21,7 +21,7 @@ echo "<option value=''>-- Toutes les catégories --</option>";
 while ($cat = $categories->fetch_assoc()) {
     echo "<option value='" . $cat['id_categorie'] . "'>" . $cat['nom_categorie'] . "</option>";
 }
-echo "</select> <button type='submit'>Filtrer</button></form><hr>";
+echo "</select> <button type='submit' class='btn-primary rounded-pill'>Filtrer</button></form><hr>";
 ?>
 
 <section>

@@ -32,19 +32,6 @@
             border: 1px solid #ccc;
             border-radius: 6px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #007BFF;
-            border: none;
-            color: white;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
         .link {
             text-align: center;
             margin-top: 15px;
