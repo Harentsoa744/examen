@@ -1,0 +1,9 @@
+<?php 
+if (isset($_POST['register'])) {
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+    $sql = "INSERT INTO membre (nom, email, mdp) VALUES ('$nom', '$email', '$mdp');";
+    mysqli_query($conn,$sql);
+}
+?>
