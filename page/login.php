@@ -19,7 +19,7 @@ session_start();
         </form>
 
         <div class="link">
-            Pas encore de compte ? <a href="inc/traitement_inscription.php">Inscription ici</a>
+            Pas encore de compte ? <a href="?p=inscription">Inscription ici</a>
         </div>
     </div>
     </div>

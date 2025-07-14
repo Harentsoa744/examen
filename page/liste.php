@@ -14,11 +14,12 @@ if (isset($_GET['categorie'])) {
 }
 
 // Liste des catégories
-$categories = $conn->query("SELECT * FROM categorie_objet");
+$catt = "SELECT * FROM categorie_objet";
+$categories = mysqli_query($conn,$catt);
 echo "<form method='GET'>";
 echo "<select name='categorie'>";
 echo "<option value=''>-- Toutes les catégories --</option>";
-while ($cat = $categories->fetch_assoc()) {
+while ($cat = mysqli_fetch_assoc($categories)) {
     echo "<option value='" . $cat['id_categorie'] . "'>" . $cat['nom_categorie'] . "</option>";
 }
 echo "</select> <button type='submit'>Filtrer</button></form><hr>";

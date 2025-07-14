@@ -3,5 +3,5 @@
     Nom: <input type="text" name="nom" required><br>
     Email: <input type="email" name="email" required><br>
     Mot de passe: <input type="password" name="mdp" required><br>
-    <button type="submit" name="register">S'inscrire</button>
+    <input type="submit" name="register" value="S'inscrire">
 </form>

@@ -5,20 +5,11 @@
     <meta charset="UTF-8">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        td{
-            border: 2px solid blue;
-        }
-        th{
-            border: 2px solid black;
-        }
-        tr{
-            border: 2px solid black;
-        }
         body {
             background-color: #f2f2f2;
             font-family: Arial, sans-serif;
             display: flex;
-            height: 100vh;
+            min-height: 100vh;
             justify-content: center;
             align-items: center;
         }
@@ -63,6 +54,11 @@
             text-align: center;
             margin-bottom: 10px;
         }
+        table { border-collapse: collapse; width: 70%; margin: auto; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        h2 { text-align: center; margin-bottom: 30px; }
     </style>
 </head>
 <body>
