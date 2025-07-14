@@ -1,10 +1,4 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "4288_4390");
-
-if ($conn->connect_error) {
-    die("Échec de connexion : " . $conn->connect_error);
-}
-
 $where = "";
 if (isset($_GET['categorie']) && $_GET['categorie'] !== '') {
     $id = intval($_GET['categorie']);
